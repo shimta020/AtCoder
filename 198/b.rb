@@ -12,3 +12,7 @@ palindrome = false
 end
 
 puts palindrome ? 'Yes' : 'No'
+
+# 数字をreverseすると先頭の0が消えるので
+# s = gets.reverse.to_i.to_s
+# puts s==s.reverse ? "Yes" : "No"
