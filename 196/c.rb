@@ -41,3 +41,29 @@ while true
 end
 
 puts cnt - 1
+
+# もしくはAAABBB、つまりAAA = BBBとなればいいのでAAAが100~999となる数を数えればいい
+
+str = gets.chomp
+
+if str.length < 2
+  puts 0
+  exit 0
+end
+
+center = str.length/2
+
+if str.length.modulo(2) == 0
+  pre_str = str[0..(center-1)]
+  post_str = str[center..(str.length-1)]
+else
+  pre_str = str[0..center]
+  pre_str = 10 ** (pre_str.length - 1)
+  post_str = str[(center+1)..(str.length-1)]
+end
+
+if pre_str.to_i <= post_str.to_i
+  puts pre_str.to_i
+else
+  puts pre_str.to_i - 1
+end
