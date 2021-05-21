@@ -4,7 +4,7 @@ cnt = N.to_s.length
 num_place = 0
 ans = 0
 
-3.step(15, 3) do |n|
+3.step(20, 3) do |n|
   if cnt <= n
     num_place = n - 3
     break
@@ -20,3 +20,6 @@ end
 ans += (N - 10**num_place + 1) * (num_place/3)
 
 puts ans
+
+
+N = gets.to_i
