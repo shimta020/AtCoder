@@ -11,3 +11,9 @@ ans = 0
 # end
 
 # puts ans
+
+arr.each do |a|
+  ans += ((a[1] - a[0] + 1)*(a[0] + a[1]))/2
+end
+
+puts ans
