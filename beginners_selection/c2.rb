@@ -27,3 +27,7 @@ str.each do |x|
 end
 
 puts ans
+
+# 別解
+# str = s.gsub(/eraser/,"").gsub(/erase/,"").gsub(/dreamer/,"").gsub(/dream/,"")
+# puts str.length == 0 ? 'YES' : 'NO'
