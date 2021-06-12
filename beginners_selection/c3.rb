@@ -38,10 +38,10 @@ n.times do
   t, x, y = gets.strip.split.map(&:to_i)
 
 #移動可能時刻と最短到着時刻を計算
-  abel = (t_old - t).abs
+  able = (t_old - t).abs
   dist = (x_old - x).abs + (y_old - y).abs
 
-  if (t + x + y) % 2 != 0 || abel < dist #<-条件追加
+  if (t + x + y) % 2 != 0 || able < dist #<-条件追加
     puts 'No'
     exit
   end
