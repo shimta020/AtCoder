@@ -3,17 +3,20 @@ arr = []
 n.times{ arr << gets.split.map(&:to_i) }
 
 ans = 0
+tmp = 0
 
 arr.each_with_index do |a, key|
-  if a[0] == a[1] && ans == 0
-    tmp = key
-    if tmp + 1 == key
+  if a[0] == a[1]
+    if tmp == 0
+      tmp = key + 1
+    elsif tmp >= 1
+      tmp = key + 1
       ans += 1
-      tmp = key
       break if ans == 2
-    else
-      ans = 0
     end
+  else
+    tmp = 0
+    ans = 0
   end
 end
 
