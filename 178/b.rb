@@ -16,12 +16,12 @@ a, b, c, d = gets.split.map(&:to_i)
 
 # 場合わけせずa,bとc,dの組み合わせのなかで最大値を出す
 
-w = a*c
-x = a*d
-y = b*c
-z = b*d
+# w = a*c
+# x = a*d
+# y = b*c
+# z = b*d
 
-puts [w,x,y,z].max
+# puts [w,x,y,z].max
 
 # productを使って行う
 
