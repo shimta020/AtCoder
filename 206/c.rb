@@ -21,9 +21,7 @@ rejects = 0
 arr = arr.group_by(&:itself).transform_values(&:size).sort
 
 arr.each do |a|
-  if a[1] != 1
-    rejects += (a[1]*(a[1]-1))/2
-  end
+  rejects += (a[1]*(a[1]-1))/2 if a[1] != 1
 end
 
 puts total - rejects
