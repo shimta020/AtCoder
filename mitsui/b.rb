@@ -9,3 +9,11 @@ elsif ((tmp+1)*1.08).to_i == n
 else
   puts ':('
 end
+
+
+# こんなんでもいい
+# n = gets.chomp.to_i
+
+# x = (n / 1.08).ceil
+
+# puts (x * 1.08).floor == n ? x : ':('
