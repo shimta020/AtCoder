@@ -6,6 +6,8 @@ second_row = (w/2)
 first_row_cnt = (h/2.0).ceil
 second_row_cnt = (h/2)
 
+# h = 1 か w = 1の時は動けないので1
+
 if h == 1 || w == 1
   puts 1
 else
