@@ -13,3 +13,5 @@ len = s.size - 1
 end
 
 puts tmp
+
+# tmp = (s.slice(0,i) & s.slice(i,n-i)).sizeでもいい
