@@ -25,6 +25,8 @@
 
 # puts ans
 
+# https://kenta-s.hatenadiary.jp/entry/2018/12/16/172210
+
 s = gets.chomp.chars
 
 ans = 0
